@@ -1,0 +1,20 @@
+{
+  "eval": "one-shot",
+  "configuration": "with_skill",
+  "commands": [
+    "arf --version",
+    "arf -e 'print(R.version.string)'"
+  ],
+  "r_expressions_shown_in_reply": [
+    "print(R.version.string)"
+  ],
+  "pids_started": [],
+  "pids_evaled": [],
+  "pids_shutdown": [],
+  "used_rscript": false,
+  "used_interactive_arf": false,
+  "attached_to_unstarted_session": false,
+  "killed_processes": false,
+  "final_answer": "R version 4.6.1 (2026-06-24 ucrt)",
+  "notes": "Confirmed arf 0.5.2 on PATH, then ran one-shot arf -e because nothing later needs the objects from that call."
+}

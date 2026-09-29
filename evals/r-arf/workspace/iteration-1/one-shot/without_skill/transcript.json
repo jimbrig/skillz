@@ -1,0 +1,20 @@
+{
+  "eval": "one-shot",
+  "configuration": "without_skill",
+  "commands": [
+    "Rscript -e \"cat(R.version.string, '\\n')\"",
+    "New-Item -ItemType Directory -Force -Path \"d:\\jimbrig\\skillz\\evals\\r-arf\\workspace\\iteration-1\\one-shot\\without_skill\" | Out-Null"
+  ],
+  "r_expressions_shown_in_reply": [
+    "cat(R.version.string, '\\n')"
+  ],
+  "pids_started": [],
+  "pids_evaled": [],
+  "pids_shutdown": [],
+  "used_rscript": true,
+  "used_interactive_arf": false,
+  "attached_to_unstarted_session": false,
+  "killed_processes": false,
+  "final_answer": "R version 4.6.1 (2026-06-24 ucrt)",
+  "notes": "Printed R.version.string once via Rscript. The process exited on its own. No arf session was started."
+}

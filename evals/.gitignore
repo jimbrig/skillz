@@ -1,0 +1,4 @@
+# gitignore for evals
+
+# local eval runs (runner output, not authored cases)
+./**/workspace/

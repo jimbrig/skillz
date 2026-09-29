@@ -1,0 +1,25 @@
+{
+  "eval": "reuse-session",
+  "configuration": "with_skill",
+  "commands": [
+    "arf --version",
+    "arf headless --json --vanilla --ipc-eval-unrestricted",
+    "arf ipc eval --pid 46908 'x <- 7'",
+    "arf ipc eval --pid 46908 'x * 6'",
+    "arf ipc shutdown --pid 46908",
+    "if (Get-Process -Id 46908 -ErrorAction SilentlyContinue) { 'still-running' } else { 'stopped' }"
+  ],
+  "r_expressions_shown_in_reply": [
+    "x <- 7",
+    "x * 6"
+  ],
+  "pids_started": [46908],
+  "pids_evaled": [46908],
+  "pids_shutdown": [46908],
+  "used_rscript": false,
+  "used_interactive_arf": false,
+  "attached_to_unstarted_session": false,
+  "killed_processes": false,
+  "final_answer": "42",
+  "notes": "Confirmed arf 0.5.2, started one headless session (pid 46908, silent mode unrestricted), assigned x <- 7, then evaluated x * 6 in that same session (value [1] 42), then shut that pid down. A follow-up process check reported it stopped."
+}

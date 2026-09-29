@@ -1,0 +1,5 @@
+{
+  "reuse-session": "With the skill, the path was the one the skill specifies: one unrestricted headless server, two evals, shutdown. Without it, the answer was still 42, via a hand-rolled Rterm bridge. Keep grading the commands.",
+  "one-shot": "With the skill, arf -e and no server. Without it, Rscript. Same version string either way.",
+  "do-not-attach": "With the skill, the editor console was left alone and the work went through arf -e. Without it, the executor wrote greeting <- 'hi'; print(greeting) into the open interactive arf (pid 65072). Next time, run this case alone so it cannot see another eval's pid. The skill could say outright that an editor console is not a drive cable and what to do instead of quietly substituting arf -e."
+}

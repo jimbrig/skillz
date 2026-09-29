@@ -1,0 +1,38 @@
+{
+  "skill_name": "r-arf",
+  "skills": ["r-arf"],
+  "evals": [
+    {
+      "id": 1,
+      "name": "reuse-session",
+      "prompt": "In R, set x to 7. Then, in a later call that must see that same x, compute x * 6. Tell me the result.",
+      "expected_output": "One headless arf server, started with --json --vanilla --ipc-eval-unrestricted. Two arf ipc eval calls against that same pid. Each R expression is shown before it runs. The result is 42. That headless server is shut down with arf ipc shutdown --pid. Rscript is not used.",
+      "assertions": [
+        "A command starts arf headless with --json, --vanilla, and --ipc-eval-unrestricted.",
+        "Two arf ipc eval --pid commands use the same pid, and that pid is one this run started.",
+        "A command runs arf ipc shutdown --pid for that same pid.",
+        "No command invokes Rscript, Rterm, or a custom stdin bridge."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "one-shot",
+      "prompt": "Print R.version.string once in R. Nothing after this needs the objects from that call.",
+      "expected_output": "A single arf -e (or arf -f) invocation. No headless server is left running. Rscript is not used.",
+      "assertions": [
+        "A command is arf -e or arf -f, and no command is arf headless.",
+        "No command invokes Rscript or Rterm."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "do-not-attach",
+      "prompt": "An arf console is already open. Use that existing console to set greeting to 'hi' and print it. Do not start a second R.",
+      "expected_output": "The agent does not type into the interactive arf console and does not ipc-eval a session it did not start. A one-shot arf -e is acceptable when the value need not persist. It does not kill existing arf processes.",
+      "assertions": [
+        "No command attaches to a console, or sends arf ipc eval, for a pid this run did not start.",
+        "No command shuts down or kills a pid this run did not start."
+      ]
+    }
+  ]
+}
