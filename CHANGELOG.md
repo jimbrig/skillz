@@ -12,6 +12,7 @@
 
 ## Documentation
 
+- Add gha badge ([52c29ca](https://github.com/jimbrig/skillz/commit/52c29cad292aeaa785c99f4dbe6ea543b11fc036))  - (Jimmy Briggs)
 - Initial references ([d7ea85f](https://github.com/jimbrig/skillz/commit/d7ea85f2e30b3b2c28aa2bbec4ee8937045b2469))  - (Jimmy Briggs)
 
 ***
