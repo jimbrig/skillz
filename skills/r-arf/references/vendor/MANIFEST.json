@@ -1,0 +1,11 @@
+﻿{
+    "repo":  "eitsupi/arf",
+    "synced_at":  "2026-09-28T19:13:07.0962093-04:00",
+    "files":  [
+                  "configuration.md",
+                  "editors.md",
+                  "ipc.md",
+                  "r-resolve.md"
+              ],
+    "arf":  "arf 0.5.2"
+}
