@@ -12,6 +12,8 @@
 
 ## Documentation
 
+- Add comprehensive evaluations documentation and test suite for r-arf ([0c78ed9](https://github.com/jimbrig/skillz/commit/0c78ed960dfb87390dede9bef41a88738c088bdc))  - (Jimmy Briggs)
+- Add project overview, structure, and evaluation resources ([338b47d](https://github.com/jimbrig/skillz/commit/338b47d56597c716e4e56e2ce87388be35af141c))  - (Jimmy Briggs)
 - Add gha badge ([52c29ca](https://github.com/jimbrig/skillz/commit/52c29cad292aeaa785c99f4dbe6ea543b11fc036))  - (Jimmy Briggs)
 - Initial references ([d7ea85f](https://github.com/jimbrig/skillz/commit/d7ea85f2e30b3b2c28aa2bbec4ee8937045b2469))  - (Jimmy Briggs)
 
