@@ -12,6 +12,7 @@
 
 ## Documentation
 
+- Expand README with detailed skills collection section ([9d8dfba](https://github.com/jimbrig/skillz/commit/9d8dfba9b80ededb7b836e677982fa15d25e33ba))  - (Jimmy Briggs)
 - Add implementation plans and routing for r-arf skill ([7a9614d](https://github.com/jimbrig/skillz/commit/7a9614deb9aa2b04e9575c8a0e76aa3e743c623f))  - (Jimmy Briggs)
 - Add comprehensive evaluations documentation and test suite for r-arf ([0c78ed9](https://github.com/jimbrig/skillz/commit/0c78ed960dfb87390dede9bef41a88738c088bdc))  - (Jimmy Briggs)
 - Add project overview, structure, and evaluation resources ([338b47d](https://github.com/jimbrig/skillz/commit/338b47d56597c716e4e56e2ce87388be35af141c))  - (Jimmy Briggs)
